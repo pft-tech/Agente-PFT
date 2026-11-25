@@ -1,6 +1,5 @@
 /* =========================================================
    Agente Pedagógico — Florescendo Talentos
-   Baseado no Manual de Identidade Visual CESAR 2025
    ========================================================= */
 
 :root {
@@ -270,13 +269,7 @@ button, textarea { font: inherit; color: inherit; }
 .msg--user { align-self: flex-end; }
 .msg__avatar {
   width: 40px; height: 40px; flex: none; border-radius: 50%;
-  background:
-    radial-gradient(circle, var(--azul) 0 22%, transparent 24%),
-    radial-gradient(circle at 50% 18%, var(--laranja) 0 22%, transparent 24%),
-    radial-gradient(circle at 82% 50%, var(--laranja) 0 22%, transparent 24%),
-    radial-gradient(circle at 50% 82%, var(--laranja) 0 22%, transparent 24%),
-    radial-gradient(circle at 18% 50%, var(--laranja) 0 22%, transparent 24%),
-    var(--creme);
+  background: url("../img/avatar.svg") center / cover no-repeat;
   border: 2px solid var(--azul);
 }
 .msg__bubble { padding: 14px 18px; }
@@ -367,7 +360,7 @@ button, textarea { font: inherit; color: inherit; }
     padding: 18px; gap: 16px;
   }
   .agent-card { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; text-align: left; align-items: center; padding: 16px; }
-  .agent-card__avatar { grid-row: span 2; width: 84px; height: 84px; margin: 0; }
+  .agent-card__avatar img { display: block; width: 100%; height: 100%; border-radius: 50%; }
   .agent-card__title { font-size: 1.5rem; margin: 0; }
   .topics ul { grid-template-columns: 1fr 1fr; }
   .side__foot { display: none; }
