@@ -121,6 +121,7 @@ button, textarea { font: inherit; color: inherit; }
   display: flex; align-items: center; gap: 12px;
   color: inherit; text-decoration: none;
 }
+.brand__logo { display: block; width: 200px; height: auto; }
 .brand__icon { width: 48px; height: 48px; flex: none; }
 .brand__text { display: flex; flex-direction: column; }
 .brand__name {
