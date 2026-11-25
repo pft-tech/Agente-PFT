@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agente Pedagógico | Florescendo Talentos</title>
+  <meta name="description" content="Converse com o Agente Pedagógico do Florescendo Talentos e tire dúvidas sobre as trilhas de aprendizagem.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#mensagem">Ir para o campo de mensagem</a>
+
+  <!-- Formas decorativas (sistema visual: círculos, recortes e mosaicos) -->
+  <div class="deco" aria-hidden="true">
+    <span class="deco__shape deco__shape--a"></span>
+    <span class="deco__shape deco__shape--b"></span>
+    <span class="deco__shape deco__shape--c"></span>
+    <span class="deco__shape deco__shape--d"></span>
+  </div>
+
+  <div class="app">
+
+    <!-- ============ BARRA LATERAL ============ -->
+    <aside class="side" aria-label="Sobre o agente">
+
+      <!-- Substitua pelo logo oficial do PFT (link no manual: "Logo do PFT") -->
+      <a class="brand" href="#" aria-label="Florescendo Talentos – início">
+        <svg class="brand__icon" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="24" fill="#FF6002"/>
+          <circle cx="24" cy="24" r="9" fill="#F7F6E2"/>
+          <path d="M24 0a24 24 0 0 1 24 24H24z" fill="#41CE41"/>
+          <path d="M0 24a24 24 0 0 1 24 24H0z" fill="#0C2856"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Florescendo<br>Talentos</span>
+          <span class="brand__hand">trilhas de aprendizagem</span>
+        </span>
+      </a>
+
+      <section class="agent-card">
+        <div class="agent-card__avatar" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <!-- flor do cactus: pétalas em círculos -->
+            <circle cx="60" cy="60" r="58" fill="#F7F6E2"/>
+            <g fill="#FF6002">
+              <circle cx="60" cy="30" r="15"/>
+              <circle cx="90" cy="60" r="15"/>
+              <circle cx="60" cy="90" r="15"/>
+              <circle cx="30" cy="60" r="15"/>
+            </g>
+            <g fill="#FF7936">
+              <circle cx="81" cy="39" r="12"/>
+              <circle cx="81" cy="81" r="12"/>
+              <circle cx="39" cy="81" r="12"/>
+              <circle cx="39" cy="39" r="12"/>
+            </g>
+            <circle cx="60" cy="60" r="16" fill="#0C2856"/>
+            <circle cx="60" cy="60" r="7" fill="#41CE41"/>
+          </svg>
+          <span class="status" title="Online"><span class="visually-hidden">Online</span></span>
+        </div>
+        <h1 class="agent-card__title">Agente Pedagógico</h1>
+        <p class="agent-card__desc">Seu parceiro de estudos nas trilhas. Tire dúvidas, revise conteúdos e descubra o próximo passo da sua jornada.</p>
+      </section>
+
+      <nav class="topics" aria-label="Atalhos">
+        <h2 class="topics__title">Por onde começar</h2>
+        <ul>
+          <li><a href="#" class="topic topic--orange"><span class="topic__dot"></span>Minhas trilhas</a></li>
+          <li><a href="#" class="topic topic--green"><span class="topic__dot"></span>Desafios e miniprojetos</a></li>
+          <li><a href="#" class="topic topic--blue"><span class="topic__dot"></span>Aulas e materiais</a></li>
+          <li><a href="#" class="topic topic--cream"><span class="topic__dot"></span>Preciso de ajuda</a></li>
+        </ul>
+      </nav>
+
+      <p class="side__foot">@CESAR 2025 | Todos os Direitos Reservados</p>
+    </aside>
+
+    <!-- ============ CHAT ============ -->
+    <main class="chat" aria-labelledby="chat-titulo">
+
+      <header class="chat__header">
+        <div>
+          <p class="eyebrow">Florescendo Talentos</p>
+          <h2 id="chat-titulo" class="chat__title">Vamos <em>florescer</em> juntos?</h2>
+        </div>
+        <span class="pill">Beta</span>
+      </header>
+
+      <div class="chat__log" role="log" aria-live="polite" aria-label="Conversa com o agente">
+
+        <div class="msg msg--agent">
+          <div class="msg__avatar" aria-hidden="true"></div>
+          <div class="msg__bubble">
+            <p>Olá! 👋 Eu sou o <strong>Agente Pedagógico</strong> do Florescendo Talentos.</p>
+            <p>Posso explicar um conteúdo, ajudar com um desafio ou indicar o que estudar agora. Sobre o que você quer conversar?</p>
+          </div>
+        </div>
+
+        <div class="chips" role="group" aria-label="Sugestões de perguntas">
+          <button type="button" class="chip">Explique um conceito da minha trilha</button>
+          <button type="button" class="chip">Me ajude com um desafio</button>
+          <button type="button" class="chip">O que devo estudar hoje?</button>
+          <button type="button" class="chip">Montar um plano de estudos</button>
+        </div>
+
+        <div class="msg msg--user">
+          <div class="msg__bubble">
+            <p>Pode me ajudar a entender a trilha de tecnologia?</p>
+          </div>
+        </div>
+
+        <div class="msg msg--agent">
+          <div class="msg__avatar" aria-hidden="true"></div>
+          <div class="msg__bubble">
+            <p>Claro! Vamos por partes: primeiro o objetivo da trilha, depois as aulas e, por fim, o miniprojeto. Por qual delas você quer começar?</p>
+          </div>
+        </div>
+
+        <div class="msg msg--agent msg--typing" aria-label="O agente está digitando">
+          <div class="msg__avatar" aria-hidden="true"></div>
+          <div class="msg__bubble"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        </div>
+      </div>
+
+      <form class="composer" action="#" method="post">
+        <label for="mensagem" class="visually-hidden">Escreva sua mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="1" placeholder="Escreva sua dúvida aqui…" required></textarea>
+        <button type="submit" class="send">
+          <span>Enviar</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="chat__note">O agente pode cometer erros. Confirme informações importantes com seu professor ou tutor.</p>
+    </main>
+  </div>
+
+</body>
+</html>
